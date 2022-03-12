@@ -20,18 +20,30 @@ and following the steps below...
 
 The `dataframe_save.ipynb` file converts the `mooc_actions.tsv` MOOC data file into a dataframe `.pkl` file (either containg the last 100 actions, or all 505 actions) with columns user ID, action ID and the time between the actions. The `labels_save.ipynb` file converts the final dropout label from `mooc_action_labels.tsv` into the `labels.npy` file for easier input when training the model.
 
-To train the proposed unbranched TG-CNN model (with &gamma;=1) run
+To train and test the proposed unbranched TG-CNN model (with &gamma;=1) run
 
 ```
-python TG_CNN.py
+python models/mooc.py
 ```
 
-
-To train the TG-CNN model with &gamma;=1 run
+To train and test the proposed unbranched TG-CNN model (with a variable &gamma; parameter) run
 
 ```
-python TG_CNN_gamma1.py
+python models/mooc_with_gamma.py
 ```
+
+To train and test the proposed branched TG-CNN model (with &gamma;=1) run
+
+```
+python models/branch_mooc.py
+```
+
+To train and test the proposed branched TG-CNN model (with a variable &gamma; parameter) run
+
+```
+python models/branch_mooc_with_gamma.py
+```
+
 
 The TG-CNN models could not be cross-validated due to the computation requirements exceeding the time limit of the high performance computer used in this project. Future work will involve validation of this model in a more robust manner.
 
@@ -59,6 +71,6 @@ Graph network of actions and the elapsed time between them put into a 3D tensor 
 
 
 
-## Useful Links
+## Useful Links to the Original Dataset and Corresponding Paper
 * [Kumar et al's JODIE model](https://snap.stanford.edu/jodie/)
 * [ACT MOOC Dataset](https://snap.stanford.edu/data/act-mooc.html)
