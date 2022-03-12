@@ -71,6 +71,6 @@ Graph network of actions and the elapsed time between them put into a 3D tensor 
 
 
 
-## Useful Links to the Original Dataset and Corresponding Paper
+## Useful Links to the Original Dataset and Corresponding Papers
 * [Kumar et al's JODIE model](https://snap.stanford.edu/jodie/)
 * [ACT MOOC Dataset](https://snap.stanford.edu/data/act-mooc.html)
