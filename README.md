@@ -18,7 +18,7 @@ pip install -r requirements.txt
 ```
 and following the steps below...
 
-The `dataframe_save.ipynb` file converts the `mooc_actions.tsv` MOOC data file into a dataframe `.pkl` file (either containg the last 100 actions, or all 505 actions) with columns user ID, action ID and the time between the actions. The `labels_save.ipynb` file converts the final dropout label from `mooc_action_labels.tsv` into the `labels.npy` file for easier input when training the model.
+The Jupyter Notebook `dataframe_save.ipynb` file converts the `mooc_actions.tsv` MOOC data file into a dataframe `.pkl` file (either containg the last 100 actions `targetid_and_scaled_time_last100.pkl`, or all 505 actions `targetid_and_scaled_time_all.pkl`) with columns user ID, action ID and the time between the actions. These processing scripts are not required to run the model, but can be used to change the number of actions if desired. The `labels_save.ipynb` file converts the final dropout label from `mooc_action_labels.tsv` into the `labels.npy` file for easier input when training the model.
 
 To train and test the proposed unbranched TG-CNN model (with &gamma;=1) run
 
