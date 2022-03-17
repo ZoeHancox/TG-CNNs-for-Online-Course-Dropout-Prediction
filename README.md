@@ -14,7 +14,7 @@ Architecture of the unbranched TG-CNN model used in this code:
 You can run these models by installing the requirements 
 
 ```
-pip install requirements.txt
+pip install -r requirements.txt
 ```
 and following the steps below...
 
