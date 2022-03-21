@@ -23,25 +23,25 @@ The Jupyter Notebook `dataframe_save.ipynb` file converts the `mooc_actions.tsv`
 To train and test the proposed unbranched TG-CNN model (with &gamma;=1) run
 
 ```
-python models/mooc.py
+python models\mooc_without_variable_gamma.py
 ```
 
 To train and test the proposed unbranched TG-CNN model (with a variable &gamma; parameter) run
 
 ```
-python models/mooc_with_gamma.py
+python models\mooc_with_gamma.py
 ```
 
 To train and test the proposed branched TG-CNN model (with &gamma;=1) run
 
 ```
-python models/branch_mooc.py
+python models\branch_mooc_without_variable_gamma.py
 ```
 
 To train and test the proposed branched TG-CNN model (with a variable &gamma; parameter) run
 
 ```
-python models/branch_mooc_with_gamma.py
+python models\branch_mooc_with_gamma.py
 ```
 
 
@@ -50,13 +50,13 @@ The TG-CNN models could not be cross-validated due to the computation requiremen
 To train the baseline LSTM model with 5-fold cross-validation run
 
 ```
-python models/baseline_LSTM.py
+python models\baseline_LSTM.py
 ```
 
 To train the baseline RNN model with 5-fold cross-validation run
 
 ```
-python models/baseline_RNN.py
+python models\baseline_RNN.py
 ```
 
 Torch version 1.7.0, tensorflow 2.4.1, numpy 1.19.2, pandas 1.2.4, scikit-learn 0.23.1 and cuda 10.2.89 were used for creating these algorithms (as given in the `requirements.txt` file). This work made use of the facilities of the N8 Centre of Excellence in Computationally Intensive Research (N8 CIR) provided and funded by the N8 research partnership and EPSRC (Grant No. EP/T022167/1). The Centre is co-ordinated by the Universities of Durham, Manchester and York. A V100 GPU was used with an IBM POWER9 processor.
