@@ -1,8 +1,12 @@
-# TG-CNNs-for-Online-Course-Dropout-Prediction - IJACI ECAI 22
+# Temporal Graph-Based CNNs (TG-CNNs) for Online Course Dropout Prediction
+
+__Authors__: Zoe Hancox and Samuel D Relton
+
+![Link to the paper](https://link.springer.com/chapter/10.1007/978-3-031-16564-1_34)
 
 ## What is in this repository?
 
-This repository contains all the code used to obtain the results in the paper "TG-CNNs-for-Online-Course-Dropout-Prediction".
+This repository contains the code used in the paper __Temporal Graph-Based CNNs (TG-CNNs) for Online Course Dropout Prediction__.
 
 
 Architecture of the unbranched TG-CNN model used in this code:
@@ -69,8 +73,31 @@ Graph network of actions and the elapsed time between them put into a 3D tensor 
 
 
 
+## References
 
+Hancox, Z., Relton, S.D. (2022). Temporal Graph-Based CNNs (TG-CNNs) for Online Course Dropout Prediction. In: Ceci, M., Flesca, S., Masciari, E., Manco, G., Raś, Z.W. (eds) Foundations of Intelligent Systems. ISMIS 2022. Lecture Notes in Computer Science(), vol 13515. Springer, Cham. https://doi.org/10.1007/978-3-031-16564-1_34
 
-## Useful Links to the Original Dataset and Corresponding Papers
+If you make use of this code, the TG-CNN algorithm or the paper please cite the following paper:
+```
+@InProceedings{10.1007/978-3-031-16564-1_34,
+author="Hancox, Zoe
+and Relton, Samuel D.",
+editor="Ceci, Michelangelo
+and Flesca, Sergio
+and Masciari, Elio
+and Manco, Giuseppe
+and Ra{\'{s}}, Zbigniew W.",
+title="Temporal Graph-Based CNNs (TG-CNNs) for Online Course Dropout Prediction",
+booktitle="Foundations of Intelligent Systems",
+year="2022",
+publisher="Springer International Publishing",
+address="Cham",
+pages="357--367"
+}
+```
+
+### Useful Links to the Original ACT MOOC Dataset and Corresponding Papers
 * [Kumar et al's JODIE model](https://snap.stanford.edu/jodie/)
 * [ACT MOOC Dataset](https://snap.stanford.edu/data/act-mooc.html)
+
+
